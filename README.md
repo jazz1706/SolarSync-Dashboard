@@ -1,8 +1,12 @@
-# SolarSync-Dashboard
-It's a website Made to Deal and Track the Surplus Energy that is been collected on the solar panels but get's wasted as the household does not require such amount of energy.
-The Loginpage asks you for a Username , Email-id , Password and then authentictes it and if all entities are entered correctly , it redirects you to the index page.
-In  the index page you can select the name of household you want to Fetch data and real time graph of and the work is therefore done for you.
-The Data of 1 year is been Read from the CSV File.
-This Website is Made for a healthy cause.
+SolarSync Dashboard: Revolutionizing Solar Energy Management
 
-Further Scope: To use blockchain and form a decentralized energy transfer system where this Surplus Energy can be Trade OFF(Currently Working On it).
+SolarSync Dashboard is a cutting-edge web platform that efficiently manages surplus solar energy, preventing wastage in households. The secure login process ensures data privacy, redirecting users to an intuitive index page. Users can select specific households, accessing dynamic real-time graphs illustrating a year's worth of solar energy data from CSV files.
+
+Key Features:
+
+User-friendly interface for seamless navigation.
+Real-time graphs for comprehensive energy insights.
+Integration with CSV files for historical data retrieval.
+Mission: To promote sustainability by optimizing surplus solar energy usage, fostering a greener future.
+
+Future Scope: Exploring blockchain integration for a decentralized energy transfer system, enabling surplus energy trading. SolarSync Dashboard reflects our commitment to sustainable solutions, making a positive impact on both the environment and society.
