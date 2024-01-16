@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Reader</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Set background color to white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .select-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        select,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        canvas {
+            width: 100%;
+            height: 300px; /* Fixed height for the graph */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>HOUSES</h1>
+        <div class="select-container">
+            <select id="houseSelect">
+                <option value="Zsolarpowerwall2">Zsolarpowerwall2</option>
+<option value="Xider">Xider</option>
+<option value="SR Solaredge">SR Solaredge</option>
+<option value="Shygar-A">Shygar-A</option>
+<option value="Shanon Ranch Valia">Shanon Ranch Valia</option>
+<option value="SDN-Eagle200">SDN-Eagle200</option>
+<option value="Rust Ohlone">Rust Ohlone</option>
+<option value="Portola Springs - Irvine CA">Portola Springs - Irvine CA</option>
+<option value="ParkCrest_A">ParkCrest_A</option>
+<option value="nedriv PV">nedriv PV</option>
+<option value="Barry's Grid">Barry's Grid</option>
+<option value="Chateau Rando">Chateau Rando</option>
+<option value="Chula Vista, CA by the Lakes">Chula Vista, CA by the Lakes</option>
+<option value="Chez Bier-Lem">Chez Bier-Lem</option>
+<option value="cwsm">cwsm</option>
+<option value="dublin-hills">dublin-hills</option>
+<option value="Hacienda de Gomez">Hacienda de Gomez</option>
+<option value="Mt. Tiburon CA">Mt. Tiburon CA</option>
+<option value="Hadleigh of South Hills">Hadleigh of South Hills</option>
+<option value="Heitman House">Heitman House</option>
+<option value="Modesto (Village One)">Modesto (Village One)</option>
+<option value="Los Angeles Home">Los Angeles Home</option>
+<option value="LN Home">LN Home</option>
+<option value="HHG-Plano">HHG-Plano</option>
+<option value="Little Orchard Solar">Little Orchard Solar</option>
+<option value="JakePV">JakePV</option>
+<option value="Koko wa Greenwood">Koko wa Greenwood</option>
+<option value="Rendezvous Ridge">Rendezvous Ridge</option>
+<option value="Rendezvous Totals">Rendezvous Totals</option>
+<option value="San_Diego_RP">San_Diego_RP</option>
+<option value="Schaffer">Schaffer</option>
+<option value="SolarEdge24">SolarEdge24</option>
+<option value="Smiser Residence">Smiser Residence</option>
+
+                <!-- Add other house options here -->
+                <!-- Add all the house options -->
+            </select>
+            <button onclick="readCSV()">fetch</button><canvas id="graphCanvas"></canvas>
+        
+        
+        </div>
+    
+        <table id="csvTable">
+            <!-- CSV content will be displayed here -->
+        </table>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
